@@ -1,0 +1,30 @@
+{
+  "name": "streaming-request-testling",
+  "version": "1.0.0",
+  "description": "Testing support for unshiftio/requests",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "emits": "^3.0.0",
+    "requests": "git://github.com/unshiftio/requests"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
+}
